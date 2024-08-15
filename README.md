@@ -1,4 +1,4 @@
-# Latin-Risk-Pulse-ml-model
+# Latin-Risk-Pulse-ML-model
 
 The Latin Risk Pulse ML model project seeks to create a binary classifier to determine whether Latin American headlines constitute a potential business risk or not. 
 
