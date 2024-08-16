@@ -17,5 +17,18 @@ A TF-IDF logistic regression baseline model shows extremely low performance on r
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
 ## 03: Improve labels 🏷️
-By training a model an half of the data at a time and using it to predict the other half's non-risk headlines, many false negatives can be removed from the data and the risk headline recall improved.  
+By training a model an half of the data at a time and using it to predict the other half's non-risk headlines, many false negatives can be removed and risk headline recall is improved dramatically.  
 [See notebook.](Notebooks/03_improve_label_quality.ipynb)
+
+### Spanish
+
+<pre>
+               precision    recall  f1-score   support
+
+           0       0.98      0.75      0.85      5291
+           1       0.36      0.92      0.52       818
+
+    accuracy                           0.77      6109
+   macro avg       0.67      0.84      0.69      6109
+weighted avg       0.90      0.77      0.81      6109
+</pre>
