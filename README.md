@@ -9,6 +9,8 @@ The data was collected by scraping the headlines of online news sources in Latin
 ## 01: Data exploration 🔍
 The data shows a few imbalances, most notably in the class labels of risk vs non-risk. 
 
+
 ![Data exploration](Images/data_exploration_1_risk_vs_non_risk.png)
+
 
 ## 02: Baseline model - TF-IDF 
