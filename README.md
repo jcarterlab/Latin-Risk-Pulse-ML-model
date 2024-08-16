@@ -21,7 +21,7 @@ A TF-IDF logistic regression baseline model shows extremely low performance on r
 <pre>
                precision    recall  f1-score   support
 
-           0       0.92      0.99      0.95     13235
+           0       0.92      0.99     0.95     13235
            1       0.84      0.44     0.58      2039
 
     accuracy                           0.91     15274
