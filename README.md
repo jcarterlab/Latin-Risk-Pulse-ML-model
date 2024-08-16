@@ -5,12 +5,16 @@ Latin Risk Pulse is a project seeking to better understand Latin American politi
 ## The data 🛢
 The data was collected by scraping the headlines of online news sources in Latin America. The texts were then put through a keyword matching process before being fed to Google Gemini for labelling. The risk labels include political stability risks, security and violence risks, and economic and regulatory risks.
 
+<br>
+
 ## 01: Data exploration 🔍
 The data shows a few imbalances, most notably in the risk vs non-risk classes.  
 [See notebook.](Notebooks/01_data_exploration.ipynb)
 
 
 ![Data exploration](Images/data_exploration_1_risk_vs_non_risk.png)
+
+<br>
 
 ## 02: Baseline model 🏁
 A TF-IDF logistic regression baseline model shows extremely low performance on risk headline recall, the main objective of this model. This is likely the result of false negatives in the data.  
@@ -42,6 +46,7 @@ weighted avg       0.91      0.91      0.90     15274
 weighted avg       0.84      0.84      0.82      3309
 </pre>
 
+<br>
 
 ## 03: Improve labels 🏷️
 Training a model an half of the data at a time and using it to predict the other half's non-risk headlines helps to identify and remove false negatives, dramatically improving risk headline recall.  
