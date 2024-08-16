@@ -31,7 +31,7 @@ By training a model an half of the data at a time and using it to predict the ot
     accuracy                           0.77      6109
    macro avg       0.67      0.84      0.69      6109
 weighted avg       0.90      0.77      0.81      6109
-</pre
+</pre>
 
 #### Portuguese
 
