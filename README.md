@@ -16,6 +16,33 @@ The data shows a few imbalances, most notably in the risk vs non-risk classes.
 A TF-IDF logistic regression baseline model shows extremely low performance on risk headline recall, the main objective of this repository. This is likely the result of false negatives in the data.  
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
+#### Spanish
+
+<pre>
+               precision    recall  f1-score   support
+
+           0       0.92      0.99      0.95     13235
+           1       0.84      0.44      0.58      2039
+
+    accuracy                           0.91     15274
+   macro avg       0.88      0.71      0.76     15274
+weighted avg       0.91      0.91      0.90     15274
+</pre>
+
+#### Portuguese
+
+<pre>
+               precision    recall  f1-score   support
+
+           0       0.84      0.98      0.91      2558
+           1       0.83      0.38      0.52       751
+
+    accuracy                           0.84      3309
+   macro avg       0.84      0.68      0.71      3309
+weighted avg       0.84      0.84      0.82      3309
+</pre>
+
+
 ## 03: Improve labels 🏷️
 By training a model an half of the data at a time and using it to predict the other half's non-risk headlines, many false negatives can be removed and risk headline recall is improved dramatically.  
 [See notebook.](Notebooks/03_improve_label_quality.ipynb)
