@@ -8,7 +8,7 @@ The data was collected by scraping the headlines of online news sources in Latin
 <br>
 
 ## 01: Data exploration 🔍
-The data shows a few imbalances, most notably in the risk vs non-risk classes.  
+The data shows a few imbalances, most notably in risk vs non-risk headlines.  
 [See notebook.](Notebooks/01_data_exploration.ipynb)
 
 
