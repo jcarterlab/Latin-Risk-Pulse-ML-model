@@ -52,31 +52,11 @@ weighted avg       0.84      0.84      0.82      3309
 By training a model an half of the data at a time and using it to predict the other half's non-risk headlines, many false negatives can be removed, dramatically improving risk headline recall.  
 [See notebook.](Notebooks/03_improve_label_quality.ipynb)
 
-#### Spanish
+![Improved recall](Images/improve_labels_spanish_metrics.png)
 
-<pre>
-               precision    recall  f1-score   support
+<br>
 
-           0       0.98      0.75      0.85      5291
-           1       0.36      0.92      0.52       818
-
-    accuracy                           0.77      6109
-   macro avg       0.67      0.84      0.69      6109
-weighted avg       0.90      0.77      0.81      6109
-</pre>
-
-#### Portuguese
-
-<pre>
-               precision    recall  f1-score   support
-
-           0       0.95      0.65      0.77      1032
-           1       0.42      0.88      0.56       291
-
-    accuracy                           0.70      1323
-   macro avg       0.68      0.77      0.67      1323
-weighted avg       0.83      0.70      0.73      1323
-</pre>
+![Improved recall](Images/improve_labels_portuguese_metrics.png)
 
 <br>
 
