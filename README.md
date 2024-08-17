@@ -17,7 +17,7 @@ The data shows a few imbalances, most notably in risk vs non-risk headlines.
 <br>
 
 ## 02: Baseline model 🚀
-A TF-IDF logistic regression model shows extremely low performance on risk headline recall, the main objective of this model. This is likely a result of many false negatives in the data.  
+A TF-IDF logistic regression model shows extremely low performance on risk headline recall, the main objective of this project. This is likely because the keyword matching process missed many risk headlines, resulting in many false negatives in the data.  
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
 #### Spanish
@@ -49,7 +49,7 @@ weighted avg       0.84      0.84      0.82      3309
 <br>
 
 ## 03: Improve labels 🏷️
-Training a model an half of the data at a time and using it to predict the other half's non-risk headlines improves risk headline recall dramatically (likely because of fewer false negatives). However, overall accuracy has suffered.
+Training a model an half of the data at a time and using it to predict the other half's non-risk headlines improves risk headline recall dramatically (likely because of fewer false negatives). However, overall accuracy has also suffered.  
 [See notebook.](Notebooks/03_improve_label_quality.ipynb)
 
 ![Improved recall](Images/improve_labels_spanish_metrics.png)
@@ -61,7 +61,7 @@ Training a model an half of the data at a time and using it to predict the other
 <br>
 
 ## 04: Balance risk types ⚖️
-Balancing the risk types by taking a random sample from each risk category (political, security, economic) the length of the smallest risk type improves overall accuracy, presumably because the model is better able to distinguish between unrepresented risk and non-risk headlines. 
+Balancing the risk types by taking an equal random sample from each category (political, security, economic) improves overall accuracy, presumably because the model is better able to distinguish between unrepresented risks and non-risk headlines.   
 [See notebook.](Notebooks/04_balance_risk_types.ipynb)
 
 ![Improved recall](Images/balance_risk_types_overall_accuracy.png)
