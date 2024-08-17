@@ -1,6 +1,6 @@
 # Latin-Risk-Pulse-ML-model
 
-Latin Risk Pulse is an organization seeking to better understand Latin American risks. This project trains a machine learning model to determine whether or not Latin American headlines represent a potential political, security or economic risk. It uses a dataset of approximately 100K headlines.
+Latin Risk Pulse is an organization seeking to better understand Latin American risks. This project trains a machine learning model to determine whether local Spanish and Portuguese headlines represent a potential political, security or economic risk. It uses a dataset of approximately 100K headlines.
 
 ## The data 🛢
 The data was collected by scraping the headlines of online news sources in Latin America. The texts were then put through a keyword matching process before being fed to Google Gemini for labelling. The risk labels include political stability risks, security and violence risks, and economic and regulatory risks.
