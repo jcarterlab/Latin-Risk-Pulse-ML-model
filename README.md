@@ -50,7 +50,7 @@ weighted avg       0.84      0.84      0.82      3309
 
 ## 03: Improve labels 🏷️
 Training a model an half of the data at a time and using it to predict the other half's non-risk headlines allows many false negatives to be removed and improves risk headline recall dramatically (albeit at the expense of precision).   
-[See notebook.](Notebooks/03_improve_label_quality.ipynb)
+[See notebook.](Notebooks/03_improve_labels.ipynb)
 
 ![Improved recall](Images/improve_labels_spanish_metrics.png)
 
