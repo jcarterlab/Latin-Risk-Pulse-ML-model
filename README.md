@@ -64,7 +64,7 @@ Training a model an half of the data at a time and using it to predict the other
 Balancing the risk types by taking an equal sample from each subcategory improves overall accuracy, likely because the model is better able to distinguish between previously underrepresented risk headlines and non-risk headlines.  
 [See notebook.](Notebooks/04_balance_risk_types.ipynb)
 
-#### Original headline imbalances
+#### Original risk type imbalances
 
 <pre>
 *** Spanish ***
