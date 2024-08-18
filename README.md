@@ -61,7 +61,7 @@ Training a model an half of the data at a time and using it to predict the other
 <br>
 
 ## 04: Balance risk types ⚖️
-Taking an equal sample from each subcategory (political, security and economic) improves overall accuracy by several percent, likely because the model is better able to distinguish between previously underrepresented risk types and non-risks.  
+Taking an equal sample from each subcategory (political, security and economic) improves overall accuracy, likely because the model is better able to distinguish between previously underrepresented risk types and non-risks.  
 [See notebook.](Notebooks/04_balance_risk_types.ipynb)
 
 #### Original risk imbalances
