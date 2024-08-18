@@ -49,7 +49,7 @@ weighted avg       0.84      0.84      0.82      3309
 <br>
 
 ## 03: Improve labels 🏷️
-Training a model an half of the data at a time and using it to predict the other half's non-risk headlines improves risk headline recall dramatically (likely because of fewer false negatives). However, overall accuracy has also suffered.  
+Training a model an half of the data at a time and using it to predict the other half's non-risk headlines allows many false negatives to be removed and improves risk headline recall dramatically.
 [See notebook.](Notebooks/03_improve_label_quality.ipynb)
 
 ![Improved recall](Images/improve_labels_spanish_metrics.png)
@@ -61,7 +61,7 @@ Training a model an half of the data at a time and using it to predict the other
 <br>
 
 ## 04: Balance risk types ⚖️
-Balancing the risk types by taking an equal random sample from each category (political, security, economic) improves overall accuracy, presumably because the model is better able to distinguish between unrepresented risks and non-risk headlines.   
+Balancing the risk types by taking an equal sample from each category (political, security, economic) improves overall accuracy (likely because the model is better able to distinguish between previously underrepresented risk and non-risk headlines).  
 [See notebook.](Notebooks/04_balance_risk_types.ipynb)
 
 ![Improved recall](Images/balance_risk_types_overall_accuracy.png)
