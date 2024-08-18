@@ -20,7 +20,7 @@ The data shows a few imbalances, most notably in risk vs non-risk headlines.
 A TF-IDF logistic regression model shows extremely low performance on risk headline recall, the main objective of this project. This is likely because the keyword matching process missed many risk headlines, resulting in false negatives.  
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
-#### Spanish
+#### Spanish results
 
 <pre>
                precision    recall  f1-score   support
@@ -33,7 +33,7 @@ A TF-IDF logistic regression model shows extremely low performance on risk headl
 weighted avg       0.91      0.91      0.90     15274
 </pre>
 
-#### Portuguese
+#### Portuguese results
 
 <pre>
                precision    recall  f1-score   support
