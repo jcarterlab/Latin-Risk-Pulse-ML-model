@@ -64,5 +64,19 @@ Training a model an half of the data at a time and using it to predict the other
 Balancing the risk types by taking an equal sample from each category improves overall accuracy, likely because the model is better able to distinguish between previously underrepresented risk headlines and non-risk headlines.  
 [See notebook.](Notebooks/04_balance_risk_types.ipynb)
 
-![Improved recall](Images/balance_risk_types_overall_accuracy.png)
+<pre>
+*** Spanish ***
+                        k      %
+risk_type                       
+security_violence    3.18  14.99
+political_stability  2.13  10.04
+economic_regulatory  1.96   9.24
+
+*** Portuguese ***
+                        k      %
+risk_type                       
+political_stability  1.18  19.58
+economic_regulatory  0.77  12.78
+security_violence    0.71  11.78
+</pre>
 
