@@ -17,7 +17,7 @@ The data shows a few imbalances, most notably in risk vs non-risk headlines.
 <br>
 
 ## 02: Baseline model 🚀
-A TF-IDF logistic regression model shows extremely low performance on risk headline recall, the main objective of this project. This is likely because the keyword matching process missed many risk headlines, resulting in false negatives.  
+A TF-IDF logistic regression model shows very poor performance on the main objective of this model, risk headline recall. This is likely because keyword matching missed risk headlines, resulting in false negatives in the data.  
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
 #### Spanish results
@@ -49,7 +49,7 @@ weighted avg       0.84      0.84      0.82      3309
 <br>
 
 ## 03: Improve labels 🏷️
-Training a model an half of the data at a time and using it to predict the other half's non-risk headlines allows many false negatives to be removed and improves risk headline recall dramatically (albeit at the expense of precision).   
+Training a model on half the data at a time and using it to predict the other half's non-risk headlines allows many false negatives to be removed, improving risk headline recall dramatically (albeit at the expense of precision).   
 [See notebook.](Notebooks/03_improve_labels.ipynb)
 
 ![Improved recall](Images/improve_labels_spanish_metrics.png)
