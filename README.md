@@ -52,6 +52,8 @@ weighted avg       0.84      0.84      0.82      3309
 Training a model on half the data at a time and using it to predict the other half's non-risk headlines allows many false negatives to be removed, improving risk headline recall dramatically (albeit at the expense of precision).   
 [See notebook.](Notebooks/03_improve_labels.ipynb)
 
+#### Results
+
 ![Improved recall](Images/improve_labels_spanish_metrics.png)
 
 <br>
@@ -81,6 +83,8 @@ political_stability  1.18  19.58
 economic_regulatory  0.77  12.78
 security_violence    0.71  11.78
 </pre>
+
+#### Results
 
 ![Overall accuracy](Images/balance_risk_types_overall_accuracy.png)
 
