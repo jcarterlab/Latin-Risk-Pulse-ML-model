@@ -82,3 +82,5 @@ economic_regulatory  0.77  12.78
 security_violence    0.71  11.78
 </pre>
 
+![Overall accuracy](Images/balance_risk_types_overall_accuracy.png)
+
