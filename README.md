@@ -92,5 +92,5 @@ security_violence    0.71  11.78
 
 ## 04: Model selection 🛠️
 
-## 05: Parameter tuning 🎛️
+## 05: Parameter tuning 🎚️
 
