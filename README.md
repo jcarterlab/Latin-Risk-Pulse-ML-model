@@ -17,7 +17,7 @@ The data shows a few imbalances, most notably in risk vs non-risk headlines.
 <br>
 
 ## 02: Baseline model 🚀
-A TF-IDF logistic regression model shows very poor performance on the main objective of this model, risk headline recall. This is likely because keyword matching missed risk headlines, resulting in false negatives in the data.  
+A TF-IDF logistic regression model shows very poor performance on the main objective of this model, risk headline recall. This is likely because keyword matching missed many risk headlines, resulting in false negatives.  
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
 #### Spanish results
