@@ -1,6 +1,6 @@
 # Latin-Risk-Pulse-ML-model
 
-Latin Risk Pulse is an organization seeking to better understand Latin American risks. This repository trains a machine learning model to determine whether regional Spanish and Portuguese headlines represent a potential political, security or economic risk. It uses a raw dataset of approximately 100K headlines.
+Latin Risk Pulse is an organization seeking to better understand Latin American risks. This repository trains a machine learning model to determine whether Spanish and Portuguese headlines represent a potential political, security or economic risk. It uses a raw dataset of approximately 100K headlines.
 
 ## The data 🛢
 The data was collected by scraping headline text from online news sources in Latin America. The texts were then put through a keyword matching process before being fed to Google Gemini for labelling. The risk labels include 1) political stability, 2) security and violence, and 3) economic and regulatory risks.
@@ -17,7 +17,7 @@ The data shows a few imbalances, most notably in risk vs non-risk headlines.
 <br>
 
 ## 02: Baseline model 🚀
-A TF-IDF logistic regression model shows very poor performance on the main objective of this model, risk headline recall. This is likely because keyword matching missed risk headlines, resulting in false negatives in the data.  
+A TF-IDF logistic regression model shows very poor performance on the main objective of this model, risk headline recall. This is likely because keyword matching missed many risk headlines, resulting in false negatives.  
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
 #### Spanish results
@@ -49,7 +49,7 @@ weighted avg       0.84      0.84      0.82      3309
 <br>
 
 ## 03: Improve label quality 🏷️
-Training a model on half the data at a time and using it to predict the other half's non-risk headlines allows many false negatives to be removed, improving risk headline recall dramatically (albeit at the expense of precision).   
+Training a model on half the data at a time and using it to predict the other half's non-risk headlines allows many false negatives to be removed based on their prediction probabilities, improving risk headline recall dramatically.   
 [See notebook.](Notebooks/03_improve_labels.ipynb)
 
 #### Results
@@ -63,7 +63,7 @@ Training a model on half the data at a time and using it to predict the other ha
 <br>
 
 ## 04: Balance risk types ⚖️
-Taking a balanced sample from each risk type (political, security and economic) does not seem to improves overall accuracy, perhaps because we are dropping badly needed data.  
+Taking a balanced sample from each risk type (political, security and economic) doesn't seem to improve overall accuracy, perhaps as the risk types are not overly imbalanced or because we are dropping badly needed data.  
 [See notebook.](Notebooks/04_balance_risk_types.ipynb)
 
 #### Risk type imbalances
@@ -87,4 +87,10 @@ security_violence    0.71  11.78
 #### Results
 
 ![Overall accuracy](Images/balance_risk_types_overall_accuracy.png)
+
+<br>
+
+## 04: Model selection 🛠️
+
+## 05: Parameter tuning 🎚️
 
