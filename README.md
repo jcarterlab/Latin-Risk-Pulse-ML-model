@@ -92,7 +92,7 @@ security_violence    0.71  11.78
 
 ## 05: Focused risk types 🧐
 
-Focusing on different risk types individually improves accuracy significantly compared to a single model attempting to predict risk or non-risk. Training 3 seperate models for each language is therefore likely a better approach.  
+Focusing on different risk types individually improves accuracy significantly compared to training a single model to predict whether a headline represents a risk or non-risk headline. 
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
 
 #### Spanish results
