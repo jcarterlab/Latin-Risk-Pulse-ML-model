@@ -92,7 +92,7 @@ security_violence    0.71  11.78
 
 ## 05: Focused risk types 🧐
 
-Focusing on a single risk type at a time appears to improve overall accuracy compared to including all three risk types in a risk vs non-risk model. This is likely a better approach than simply balancing the risk type distribution of a single model.
+Focusing on a single risk type at a time appears to improve overall accuracy compared to including all three risk types in a risk vs non-risk model. This is likely a better approach than using a single model.
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
 
 #### Spanish results
