@@ -17,7 +17,7 @@ The data shows a few imbalances, most notably in risk vs non-risk headlines.
 <br>
 
 ## 02: Baseline model 🚀
-A TF-IDF logistic regression model shows very poor performance on the main objective of this model, risk headline recall. This is likely because keyword matching missed many risk headlines, resulting in false negatives.  
+A TF-IDF logistic regression model shows very poor performance on the main objective of this project, risk headline recall. This is likely because keyword matching missed many risk headlines, resulting in false negatives.  
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
 #### Spanish results
@@ -92,7 +92,7 @@ security_violence    0.71  11.78
 
 ## 05: Focused risk types 🧐
 
-Focusing on a single risk type at a time appears to improve overall accuracy compared to including all three risk types in a risk vs non-risk model. This is likely a better approach than using a single model.  
+Focusing on a single risk type at a time appears to improve overall accuracy significantly compared to the inclusion of all three risk types in a single risk vs non-risk model. Training 3 seperate models is thus likely a better approach.  
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
 
 #### Spanish results
