@@ -63,7 +63,7 @@ Training a model on half the data at a time and using it to predict the other ha
 <br>
 
 ## 04: Balance risk types ⚖️
-Taking a balanced sample from each risk type (political, security and economic) appears to increase accuracy by a few percentage points, likely because it improves the model's ability to distinguish between underrepresented risk types.   
+Taking a balanced sample from each risk type (political, security and economic) appears to increase accuracy by a few percentage points, likely because it improves the model's ability to distinguish underrepresented risk types.   
 [See notebook.](Notebooks/04_balance_risk_types.ipynb)
 
 #### Risk type imbalances
@@ -92,7 +92,7 @@ security_violence    0.71  11.78
 
 ## 05: Focused risk types 🧐
 
-Focusing on a single risk type at a time appears to improve overall accuracy significantly compared to the inclusion of all three risk types in a single risk vs non-risk model. Training 3 seperate models is thus likely a better approach.  
+Focusing on different risk types individually improves accuracy significantly compared to a single model attempting to predict risk or non-risk. Training 3 seperate models for each language is therefore likely a better approach.  
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
 
 #### Spanish results
