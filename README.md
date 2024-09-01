@@ -63,7 +63,7 @@ Training a model on half the data at a time and using it to predict the other ha
 <br>
 
 ## 04: Balance risk types ⚖️
-Taking a balanced sample from each risk type (political, security and economic) doesn't seem to improve overall accuracy, perhaps as the risk types are not overly imbalanced or because we are dropping badly needed data.  
+Taking a balanced sample from each risk type (political, security and economic) appears to increase accuracy by a few percentage points, likely because it improves the model's ability to distinguish between underrepresented risk types.   
 [See notebook.](Notebooks/04_balance_risk_types.ipynb)
 
 #### Risk type imbalances
