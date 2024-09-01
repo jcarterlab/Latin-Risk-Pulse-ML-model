@@ -1,6 +1,6 @@
 # Latin-Risk-Pulse-ML-model
 
-Latin Risk Pulse is an organization seeking to better understand Latin American risks. This repository trains a machine learning model to determine whether Spanish and Portuguese headlines represent a potential political, security or economic risk. It uses a raw dataset of approximately 100K headlines.
+Latin Risk Pulse is a project seeking to better understand Latin American risks. This repository trains a machine learning model to determine whether Spanish and Portuguese headlines represent a potential political, security or economic risk. It uses a raw dataset of over 100K headlines.
 
 ## The data 🛢
 The data was collected by scraping headline text from online news sources in Latin America. The texts were then put through a keyword matching process before being fed to Google Gemini for labelling. The risk labels include 1) political stability, 2) security and violence, and 3) economic and regulatory risks.
@@ -90,7 +90,24 @@ security_violence    0.71  11.78
 
 <br>
 
-## 04: Model selection 🛠️
+## 05: Focused risk types 🧐
 
-## 05: Parameter tuning 🎚️
+Focusing on a single risk type at a time appears to improve overall accuracy compared to including all three risk types in a risk vs non-risk model. This is likely a better approach than simply balancing the risk type distribution of a single model.
+[See notebook.](Notebooks/05_focused_risk_types.ipynb)
+
+#### Spanish results
+
+![Overall accuracy](Images/focused_spanish_risk_types_performance.png)
+
+#### Portuguese results
+
+![Overall accuracy](Images/focused_portuguese_risk_types_performance.png)
+
+<br>
+
+## 06: Model selection 🛠️
+
+<br>
+
+## 07: Parameter tuning 🎚️
 
