@@ -114,12 +114,12 @@ Experimenting with various models shows that a support vector machine (SVC) trai
 
 ![Model accuracies](Images/spanish_portuguese_models_accuracies.png)
 
-#### Neural network accuracies
+#### Training vs validation accuracies for neural networks
 
 <pre>
 Spanish:
 
-Model      Training Accuracy    Validation Accuracy
+Model      Training acc.        Validation acc.
 --------------------------------------------------
 FNN        0.98                 0.25                
 CNN        1.0                  0.24                
@@ -128,11 +128,11 @@ LSTM       0.99                 0.34
 
 Portuguese:
 
-Model      Training Accuracy    Validation Accuracy
+Model      Training acc.        Validation acc.
 --------------------------------------------------
 FNN        0.98                 0.26                
 CNN        1.0                  0.13                
-LSTM       1.0                  0.23 
+LSTM       1.0                  0.23                
 </pre>
 
 <br>
