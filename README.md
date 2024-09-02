@@ -107,14 +107,14 @@ Focusing on different risk types (political, security and economic) individually
 
 ## 06: Model selection 🛠️
 
-Experimenting with various models shows that a support vector machine (SVC) trained on TF-IDF vectors is the most promising. The small size of the dataset and large gap between training and validation accuracy suggest the neural networks are overfitting.   
+Experimenting with various models shows that a support vector machine (SVC) trained on TF-IDF vectors is the most promising. The large gap between training and validation accuracy suggest the neural networks are overfitting.   
 [See notebook.](Notebooks/06_model_selection.ipynb)
 
-#### Model accuracies
+#### Model accuracy
 
 ![Model accuracies](Images/spanish_portuguese_models_accuracies.png)
 
-#### Training vs validation accuracies for neural networks
+#### Training vs validation accuracy for neural networks
 
 <pre>
 Spanish:
