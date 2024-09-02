@@ -97,15 +97,40 @@ Focusing on different risk types (political, security and economic) individually
 
 #### Spanish results
 
-![Overall accuracy](Images/focused_spanish_risk_types_performance.png)
+![Spanish results](Images/focused_spanish_risk_types_performance.png)
 
 #### Portuguese results
 
-![Overall accuracy](Images/focused_portuguese_risk_types_performance.png)
+![Portuguese results](Images/focused_portuguese_risk_types_performance.png)
 
 <br>
 
 ## 06: Model selection 🛠️
+
+Experimenting with various models shows that a support vector machine (SVC) trained on TF-IDF vectors is the most promising. The small size of the dataset and large gap between training and validation accuracy suggest the neural networks are overfitting.   
+[See notebook.](Notebooks/06_model_selection.ipynb)
+
+#### Model accuracies
+
+![Model accuracies](Images/Images/spanish_portuguese_models_accuracies.png)
+
+#### Neural network accuracies
+
+<pre>
+*** Spanish ***
+                        training      validation
+model                       
+fnn    0.98  0.28
+cnn  0.99  0.22
+lstm  !!!   !!!
+
+*** Portuguese ***
+                        training      validation
+model                       
+fnn  0.97  0.25
+cnn  0.99  0.18
+lstm    !!!  !!!
+</pre>
 
 <br>
 
