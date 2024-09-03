@@ -92,7 +92,7 @@ security_violence    0.71  11.78
 
 ## 05: Focus risk types 🧐
 
-Focusing on the different risk types individually appears to improve accuracy significantly compared to training a single model combining all 3 into one category, suggesting 3 specialized models are better than 1 general model.    
+Focusing on the different risk types individually appears to improve accuracy significantly compared to combining all 3 into a single category, suggesting 3 specialized models are better than 1 general model.    
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
 
 #### Spanish results
