@@ -107,7 +107,7 @@ Focusing on different risk types individually appears to improve accuracy signif
 
 ## 06: Select model 🛠️
 
-XGBoost trained on TF-IDF vectors seems to be the most promising model, especially given that the more complex neural network models are overfitting on this relativley small, noisy dataset.  
+A support vector machine (SVM) trained on TF-IDF vectors seems to be the most promising model, especially given that the more complex neural network models are overfitting on this relativley small, noisy dataset.  
 [See notebook.](Notebooks/06_model_selection.ipynb)
 
 #### Model accuracies
