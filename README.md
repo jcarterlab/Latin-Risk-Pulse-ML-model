@@ -107,7 +107,7 @@ Focusing on different risk types (political, security and economic) individually
 
 ## 06: Select model 🛠️
 
-Experimentation here suggests that a support vector machine (SVC) trained on TF-IDF vectors is the most promising strategy. Neural networks trained on vector embeddings appear to lead to overfitting on this small dataset.   
+A support vector machine (SVC) trained on TF-IDF vectors appears to be the most promising strategy, especially given that more complex neural networks trained on vector embeddings lead to overfitting on this small dataset.   
 [See notebook.](Notebooks/06_model_selection.ipynb)
 
 #### Model accuracies
