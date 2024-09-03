@@ -49,7 +49,7 @@ weighted avg       0.84      0.84      0.82      3309
 <br>
 
 ## 03: Improve labels 🏷️
-Training a model on half the data at a time and using it to predict the other half's non-risk headlines allows many false negatives to be removed based on their probability score, improving risk headline recall dramatically.   
+Training a model on half the data and using it to predict the other half's non-risk headlines allows many false negatives to be removed based on their probability score, improving risk headline recall dramatically.   
 [See notebook.](Notebooks/03_improve_labels.ipynb)
 
 #### Results
