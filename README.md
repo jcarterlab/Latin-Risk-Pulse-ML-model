@@ -107,7 +107,7 @@ Focusing on the different risk types individually appears to improve accuracy si
 
 ## 06: Select model 🛠️
 
-An XGBoost model trained on TF-IDF vectors is the most promising strategy, especially given that more complex neural network models trained on vector embeddings seem to result in overfitting on this small dataset.    
+An XGBoost model trained on TF-IDF vectors appears to be the most promising strategy for this relatively small dataset, especially given that more complex neural networks trained on vector embeddings seem to result in overfitting.    
 [See notebook.](Notebooks/06_model_selection.ipynb)
 
 #### Model accuracies
