@@ -92,7 +92,7 @@ security_violence    0.71  11.78
 
 ## 05: Focus risk types 🧐
 
-Focusing on different risk types (political, security and economic) individually improves accuracy significantly compared to training a single model to predict whether a headline represents a risk or non-risk headline.   
+Focusing on the three different risk types individually appears to improve accuracy significantly compared to training a single model to predict risk or non-risk headline.
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
 
 #### Spanish results
