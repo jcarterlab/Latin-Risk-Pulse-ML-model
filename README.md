@@ -90,9 +90,9 @@ security_violence    0.71  11.78
 
 <br>
 
-## 05: Focus risk types 🧐
+## 05: Isolate risk types 🧐
 
-Focusing on different risk types individually appears to improve accuracy significantly compared to combining all three into a single risk category, suggesting three specialized models are better than one general model.    
+Focusing on different risk types individually appears to improve accuracy significantly compared to combining all three into one category, suggesting three specialized binary models are better than a single general one.    
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
 
 #### Spanish results
@@ -107,7 +107,7 @@ Focusing on different risk types individually appears to improve accuracy signif
 
 ## 06: Select model 🛠️
 
-An XGBoost model trained on TF-IDF vectors is the most promising strategy, especially given that the more complex neural network models seem to be overfitting on this relativley small, noisy dataset.  
+XGBoost trained on TF-IDF vectors seems to be the most promising model, especially given that the more complex neural network models are overfitting on this relativley small, noisy dataset.  
 [See notebook.](Notebooks/06_model_selection.ipynb)
 
 #### Model accuracies
