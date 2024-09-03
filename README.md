@@ -121,18 +121,18 @@ Spanish:
 
 Model      Training acc.        Validation acc.
 --------------------------------------------------
-FNN        0.98                 0.25                
-CNN        1.0                  0.24                
-LSTM       0.99                 0.34                
+FNN        0.98                 0.32                
+CNN        1.0                  0.28                
+LSTM       1.0                  0.31                
 
 
 Portuguese:
 
 Model      Training acc.        Validation acc.
 --------------------------------------------------
-FNN        0.98                 0.26                
-CNN        1.0                  0.13                
-LSTM       1.0                  0.23                
+FNN        0.97                 0.27                
+CNN        1.0                  0.2                 
+LSTM       1.0                  0.26                             
 </pre>
 
 <br>
