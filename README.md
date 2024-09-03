@@ -7,7 +7,7 @@ The data was collected by scraping headline text from online news sources in Lat
 
 <br>
 
-## 01: Data exploration 🔍
+## 01: Explore data 🔍
 The data shows a few imbalances, most notably in risk vs non-risk headlines.  
 [See notebook.](Notebooks/01_data_exploration.ipynb)
 
@@ -16,7 +16,7 @@ The data shows a few imbalances, most notably in risk vs non-risk headlines.
 
 <br>
 
-## 02: Baseline model 🚀
+## 02: Establish baseline 🚀
 A TF-IDF logistic regression model shows very poor performance on the main objective of this project, risk headline recall. This is likely because keyword matching missed many risk headlines, resulting in false negatives.  
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
@@ -48,7 +48,7 @@ weighted avg       0.84      0.84      0.82      3309
 
 <br>
 
-## 03: Improve label quality 🏷️
+## 03: Improve labels 🏷️
 Training a model on half the data at a time and using it to predict the other half's non-risk headlines allows many false negatives to be removed based on their probability score, improving risk headline recall dramatically.   
 [See notebook.](Notebooks/03_improve_labels.ipynb)
 
@@ -90,7 +90,7 @@ security_violence    0.71  11.78
 
 <br>
 
-## 05: Focused risk types 🧐
+## 05: Focus risk types 🧐
 
 Focusing on different risk types (political, security and economic) individually improves accuracy significantly compared to training a single model to predict whether a headline represents a risk or non-risk headline.   
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
@@ -105,7 +105,7 @@ Focusing on different risk types (political, security and economic) individually
 
 <br>
 
-## 06: Model selection 🛠️
+## 06: Select model 🛠️
 
 Experimentation here suggests that a support vector machine (SVC) trained on TF-IDF vectors is the most promising strategy. Neural networks trained on vector embeddings appear to lead to overfitting on this small dataset.   
 [See notebook.](Notebooks/06_model_selection.ipynb)
