@@ -92,7 +92,7 @@ security_violence    0.71  11.78
 
 <br>
 
-### 05: Seperate risk types 🧐
+### 05: Single out risk types 🧐
 
 Focusing on different risk types individually appears to improve accuracy significantly compared to combining all three into one category, suggesting three specialized models are better than a single general one.    
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
