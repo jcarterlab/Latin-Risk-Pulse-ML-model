@@ -7,7 +7,9 @@ The data was collected by scraping headline text from online news sources in Lat
 
 <br>
 
-## 01: Explore data 🔍
+## Iteration 1
+
+### 01: Explore data 🔍
 The data shows a few imbalances, most notably in risk vs non-risk headlines.  
 [See notebook.](Notebooks/01_data_exploration.ipynb)
 
@@ -16,7 +18,7 @@ The data shows a few imbalances, most notably in risk vs non-risk headlines.
 
 <br>
 
-## 02: Establish baseline 🚀
+### 02: Establish baseline 🚀
 A TF-IDF logistic regression model shows very poor performance on the main objective of this project, risk headline recall. This is likely because keyword matching missed risk headlines, resulting in false negatives.  
 [See notebook.](Notebooks/02_tfidf_baseline.ipynb)
 
@@ -48,7 +50,7 @@ weighted avg       0.84      0.84      0.82      3309
 
 <br>
 
-## 03: Improve labels 🏷️
+### 03: Improve labels 🏷️
 Training a model on half the data and using it to predict the other half's non-risk headlines allows many false negatives to be removed based on their probability score, improving risk headline recall dramatically.   
 [See notebook.](Notebooks/03_improve_labels.ipynb)
 
@@ -62,7 +64,7 @@ Training a model on half the data and using it to predict the other half's non-r
 
 <br>
 
-## 04: Balance risk types ⚖️
+### 04: Balance risk types ⚖️
 Taking a balanced sample from each risk type (political, security and economic) appears to increase accuracy by a few percentage points, likely because it improves the model's ability to distinguish underrepresented risk types.   
 [See notebook.](Notebooks/04_balance_risk_types.ipynb)
 
@@ -90,7 +92,7 @@ security_violence    0.71  11.78
 
 <br>
 
-## 05: Seperate risk types 🧐
+### 05: Seperate risk types 🧐
 
 Focusing on different risk types individually appears to improve accuracy significantly compared to combining all three into one category, suggesting three specialized models are better than a single general one.    
 [See notebook.](Notebooks/05_focused_risk_types.ipynb)
@@ -105,7 +107,7 @@ Focusing on different risk types individually appears to improve accuracy signif
 
 <br>
 
-## 06: Select model 🛠️
+### 06: Select model 🛠️
 
 A support vector machine (SVM) trained on TF-IDF vectors seems to be the most promising model, especially given that the more complex neural network models are overfitting on this relativley small, noisy dataset.  
 [See notebook.](Notebooks/06_model_selection.ipynb)
@@ -137,5 +139,5 @@ LSTM       1.0                  0.26
 
 <br>
 
-## 07: Parameter tuning 🎚️
+### 07: Parameter tuning 🎚️
 
