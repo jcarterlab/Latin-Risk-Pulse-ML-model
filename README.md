@@ -1,13 +1,17 @@
 # Latin-Risk-Pulse-ML-model
 
-Latin Risk Pulse is a project seeking to better understand Latin American risks. This repository trains a machine learning model to determine whether Spanish and Portuguese headlines represent a potential political, security or economic risk. It uses a raw dataset of over 100K headlines.
+Latin Risk Pulse is a project seeking to better understand Latin American risks. This repository attempts to train a series of machine learning models to classify whether Spanish and Portuguese headlines constitute a potential political, security or economic risk.
 
 ## The data 🛢
-The data was collected by scraping headline text from online news sources in Latin America. The texts were then put through a keyword matching process before being fed to Google Gemini for labelling. The risk labels include 1) political stability, 2) security and violence, and 3) economic and regulatory risks.
+### 1st iteration
+An initial raw dataset of over 100,000 headlines was collected by scraping headline text from online news sources in Argentina, Brazil, Colombia and Mexico. The texts were then put through a keyword matching process before being fed to Google Gemini for labelling. However, since the keyword matching process likely failed to catch all risk headlines, the default non-risk category probably contains many false positives. This was initially tackled by training a moddel on half the data, predicting the other half's non-risk headlines and keeping only those with low scores. Yet this leads to a skewed dataset that doesn't refelct the real data distribution, prompting the need for a second, better round of data collection. 
+
+### 2nd iteration (in progress)
+A second dataset is currenty being collected. This method doesn't use keyword matching and instead feeds 100% of the headlines to Google Gemini in small batches for evaluation according to a more clearly defined criteria that includes example headlines. Because it uses a greater number of API calls, this round will focus only on Colombia. 
 
 <br>
 
-## Iteration 1
+## 1st iteration
 
 ### 01: Explore data 🔍
 The data shows a few imbalances, most notably in risk vs non-risk headlines.  
@@ -141,3 +145,10 @@ LSTM       1.0                  0.26
 
 ### 07: Parameter tuning 🎚️
 
+<br>
+
+## 2nd iteration (in progress)
+
+A second iteration will begin once a new dataset of over 50,000 headlines have been collected according to an improved data collection method. 
+
+<br>
