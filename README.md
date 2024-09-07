@@ -11,7 +11,7 @@ Latin Risk Pulse is a project seeking to better understand Latin American risks.
 * But it resulted in a skewed dataset that doesn't reflect the real distribution. This was particularly evident during parameter tuning when tuned models actually performed worse than their default counterparts on put aside data, prompting the need for a second, better data collection process.    
 
 ### The 2nd dataset (collection in progress)
-* A second dataset is currenty being collected in which all headlines are fed to Google Gemini for evaluation according to a more clearly defined criteria with multiple examples. Yet since this requires a greater number of API calls, it will initially focus only on Colombia with a view to include other countries later if it works. 
+* A second dataset is currenty being collected in which all headlines are fed to Google Gemini for labelling according to a more clearly defined criteria with multiple examples. This however requires a greater number of API calls, meaning this dataset will initially focus only on Colombia with a view to include other countries later if it is a success. 
 
 <br>
 
