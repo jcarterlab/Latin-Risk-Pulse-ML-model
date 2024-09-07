@@ -10,6 +10,8 @@ An initial dataset of 100,000 headlines was collected by scraping online news so
 
 This was initially tackled by training a model on half the data, predicting the other half's non-risk headlines and keeping only those with low probability scores. But dropping headlines in this way resulted in a skewed dataset, something that became particularly evident during parameter tuning when tuned models actually performed worse than their default counterparts on put aside data. 
 
+<br>
+
 ### 2nd dataset (collection in progress)
 A second dataset is currenty being collected in which all headlines are given to Google Gemini for labelling according to a more clearly defined criteria with multiple examples. This requires a greater number of API calls however, meaning the dataset will initially focus on only Colombia with a view to include others later if it proves successful. 
 
