@@ -153,6 +153,6 @@ LSTM       1.0                  0.26
 
 ## 2nd iteration (in progress)
 
-A second iteration will begin once a new dataset of over 50,000 headlines has been collected according to an improved data collection method. 
+A second round of experimentation will begin once a new dataset of over 50,000 headlines has been collected according to an improved data collection method. 
 
 <br>
