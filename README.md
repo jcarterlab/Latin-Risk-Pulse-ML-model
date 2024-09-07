@@ -8,7 +8,7 @@ An initial dataset of 100,000 headlines was collected by scraping headline text 
 
 Because the keyword matching process likely missed risk headlines however, the default non-risk category probably contains false negatives. This was initially tackled by training a model on half the data, predicting the other half's non-risk headlines and keeping only those with low probability scores.  
 
-But such headline dropping resulted in a skewed dataset that doesn't reflect the real distribution. This became particularly evident during parameter tuning when tuned models actually performed worse than their default counterparts on put aside data, highlighting the need for better data collection. 
+But headline dropping resulted in a skewed dataset that doesn't reflect the real distribution. This became particularly evident during parameter tuning when tuned models actually performed worse than their default counterparts on put aside data, highlighting the need for better data collection. 
 
 <br>
 
