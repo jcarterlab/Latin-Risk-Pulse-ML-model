@@ -149,7 +149,7 @@ LSTM       1.0                  0.26
 
 ### 07: Tune parameters 🎚️
 
-Tuning several models actually seems to reduce overall accuracy on put aside data, suggesting the false negative dropping technique employed in notebook 3 has left a dataset that does not reflect the real distribution.    
+Tuning 3 models actually seems to reduce overall accuracy on the put aside data, suggesting the false negative dropping technique used in notebook 3 has resulted in a dataset that does not reflect the real distribution.    
 [See notebook.](Notebooks/07_model_tuning.ipynb)
 
 #### Performance change after tuning
