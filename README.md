@@ -13,7 +13,7 @@ But headline dropping resulted in a skewed dataset that doesn't reflect the real
 <br>
 
 ### The 2nd dataset (collection in progress)
-A second dataset is currenty being collected in which all headlines are given to Google Gemini for labelling according to a more clearly defined criteria with multiple examples. This requires a greater number of API calls however, meaning this dataset will initially focus on only Colombia with a view to include others later if it proves a success. 
+A second dataset is currenty being collected in which all headlines are given to Google Gemini for labelling according to a more clearly defined criteria with multiple examples. This requires a greater number of API calls however, meaning the dataset will initially focus on only Colombia with a view to include others later if it proves a success. 
 
 <br>
 
