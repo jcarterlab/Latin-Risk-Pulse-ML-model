@@ -10,6 +10,8 @@ Because the keyword matching process likely missed risk headlines however, the d
 
 But such headline dropping resulted in a skewed dataset that doesn't reflect the real distribution. This became particularly evident during parameter tuning when tuned models actually performed worse than their default counterparts on put aside data, highlighting the need for better data collection. 
 
+<br>
+
 ### The 2nd dataset (collection in progress)
 A second dataset is currenty being collected in which all headlines are given to Google Gemini for labelling according to a more clearly defined criteria with multiple examples. This requires a greater number of API calls however, meaning this dataset will initially focus on only Colombia with a view to include others later if it proves a success. 
 
