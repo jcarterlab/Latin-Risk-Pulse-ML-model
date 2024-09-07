@@ -2,12 +2,8 @@
 
 Latin Risk Pulse is a project seeking to better understand Latin American risks. This repository trains machine learning models to classify whether regional headlines constitute a potential political, security or economic risk.
 
-- [Data exploration](Notebooks/01_data_exploration.ipynb)
-
-<br>
-
 ## The data 🛢
-### The 1st dataset
+### 1st dataset
 An initial dataset of 100,000 headlines was collected by scraping headline text from online news sources in Argentina, Brazil, Colombia and Mexico. The texts were then filtered via a keyword matching process before being fed to Google Gemini for labelling according to risk category descriptions.   
 
 Because the keyword matching process likely missed risk headlines however, the default non-risk category probably contains false negatives. This was initially tackled by training a model on half the data, predicting the other half's non-risk headlines and keeping only those with low probability scores.  
@@ -16,7 +12,7 @@ But headline dropping resulted in a skewed dataset that doesn't reflect the real
 
 <br>
 
-### The 2nd dataset (collection in progress)
+### 2nd dataset (collection in progress)
 A second dataset is currenty being collected in which all headlines are given to Google Gemini for labelling according to a more clearly defined criteria with multiple examples. This requires a greater number of API calls however, meaning the dataset will initially focus on only Colombia with a view to include others later if it proves a success. 
 
 <br>
