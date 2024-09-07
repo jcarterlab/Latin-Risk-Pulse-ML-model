@@ -1,6 +1,6 @@
 # Latin-Risk-Pulse-ML-model
 
-Latin Risk Pulse is a project seeking to better understand Latin American risks. This repository trains machine learning models to classify whether regional headlines constitute a potential political, security or economic risk.
+Latin Risk Pulse is a project seeking to better understand Latin American risks. This repository trains machine learning models to classify regional headlines as a potential political, security or economic risk.
 
 ## The data 🛢
 ### 1st dataset
