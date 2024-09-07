@@ -3,19 +3,19 @@
 Latin Risk Pulse is a project seeking to better understand Latin American risks. This repository trains machine learning models to classify whether regional headlines constitute a potential political, security or economic risk.
 
 ## The data 🛢
-### 1st dataset
+### The 1st dataset
 * An initial raw dataset of over 100,000 headlines was collected by scraping headline text from online news sources in Argentina, Brazil, Colombia and Mexico. The texts were then put through a keyword matching process before being fed to Google Gemini for labelling.  
 
 * Since the keyword matching process likely missed many risk headlines however, the default non-risk category probably contains a number of false positives. This was initially tackled by training a model on half the data, predicting the other half's non-risk headlines and keeping only those with low scores.   
 
 * But this led to a skewed dataset that doesn't reflect the real data distribution. This was particularly evident during parameter tuning when tuned models actually performed worse than their default counterparts on put aside data, prompting the need for a second, better data collection process.    
 
-### 2nd dataset (collection in progress)
+### The 2nd dataset (collection in progress)
 * A second dataset is currenty being collected in which all headlines are fed to Google Gemini for evaluation according to a more clearly defined criteria with multiple examples. Yet since this requires a greater number of API calls, it will initially focus only on Colombia with a view to include other countries later if it works. 
 
 <br>
 
-## 1st dataset
+## The 1st dataset
 
 ### 01: Explore data 🔍
 The data shows a few imbalances, most notably in risk vs non-risk headlines.  
@@ -151,7 +151,7 @@ LSTM       1.0                  0.26
 
 <br>
 
-## 2nd dataset (collection in progress)
+## The 2nd dataset (collection in progress)
 
 A second round of experimentation will begin once a new dataset of over 50,000 headlines has been collected using an improved data collection method. 
 
