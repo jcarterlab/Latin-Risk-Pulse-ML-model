@@ -119,7 +119,7 @@ Focusing on different risk types individually seems to improve accuracy signific
 
 ### 06: Select model 🛠️
 
-A support vector machine (SVM) trained on TF-IDF vectors seems to be the most promising model, especially given that the more complex neural network models are overfitting on this relativley small, noisy dataset.  
+A support vector machine (SVM) trained on TF-IDF vectors looks to be the most promising model, especially given that the more complex neural network models are overfitting on this relativley small, noisy dataset.  
 [See notebook.](Notebooks/06_model_selection.ipynb)
 
 #### Model accuracies
